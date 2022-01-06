@@ -12,5 +12,3 @@ This project for me should take around 2 weeks and a half.
 - Something to finally get my programming journey back on track.
 - To be able to create my first game without a game engine (in which I have only used one game engine ever before xd).
 - Understand how to use unit-testing and professional stuff.
-
-* Tools used: Should just be vanilla java.
