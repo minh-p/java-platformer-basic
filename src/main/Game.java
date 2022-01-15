@@ -31,12 +31,16 @@ public class Game {
         frame.setLayout(new BorderLayout());
 
         // set the background
-        // the Background class will manage changing the background image. We can just set the background here.
+        // the Background class will manage changing the background image.
+        // We can just set the background here.
 
         // BackgroundChooser: get Image for convienience.
-        BackgroundChooser backgroundChooser = new BackgroundChooser(1280, 720, "../../assets/images/");
+        BackgroundChooser backgroundChooser
+        = new BackgroundChooser(1280, 720, "../../assets/images/");
         JLabel backgroundLabel = new JLabel();
-        backgroundLabel.setIcon(backgroundChooser.getImage("xenoblade_copypasta_background.png"));
+        backgroundLabel.setIcon(
+            backgroundChooser.getImage("xenoblade_copypasta_background.png")
+        );
         frame.setContentPane(backgroundLabel);
         refresh(frame);
     }

@@ -25,13 +25,17 @@ public class BackgroundChooser {
     public ImageIcon getImage(String imageName) {
         ImageIcon imageIcon = null;
 
-        // Finding and returning the image if it exists. Else, throw a beautiful IOException
+        // Finding and returning the image if it exists.
+        // Else, throw a beautiful IOException
         try {
             File sourceImage = new File(imagesDirectory + imageName);
             Image image = ImageIO.read(sourceImage);
             imageIcon = new ImageIcon(image);
         } catch(IOException e) {
-            System.out.println("From BackgroundChooser: No Image found With Name In Declared Directory.");
+            System.out.println(
+                "From BackgroundChooser: "
+                + "No Image found With Name In Declared Directory."
+            );
             System.out.println("imagesDirectory path: " + imagesDirectory);
         }
 
